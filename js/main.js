@@ -1,10 +1,11 @@
 
 
 function randomNumber(min, max) {
-  let rand = min + Math.random() * (max - min);
+  const rand = min + Math.random() * (max - min);
   return Math.round(rand);
 }
 
+randomNumber();
 
 function checkMaxLength(strLength, maxStrLength) {
   if(strLength.length < maxStrLength) {
@@ -12,3 +13,5 @@ function checkMaxLength(strLength, maxStrLength) {
   }
   return false;
 }
+
+checkMaxLength(15, 144);
